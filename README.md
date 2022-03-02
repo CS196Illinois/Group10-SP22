@@ -1,8 +1,8 @@
-# Group TEAM_NUMBER
-Group Name: TEAM_NAME
+# Group 10
+Group Name: Print10
 
-[MVP Link](http://cs196.cs.illinois.edu)
+[MVP Link](https://docs.google.com/document/d/1z-QWJhC-q9MKX-FKBcCXjf68Pe1SPSie7jXFceyKgHw/edit?usp=sharing)
 
-Team Members: STUDENTS_NETIDS
+Team Members: thinhht2, tnguy317, haleyj4, loren3, vloza3
 
-Project Manager: PM_NETID
+Project Manager: dhruvks2, tkim139
