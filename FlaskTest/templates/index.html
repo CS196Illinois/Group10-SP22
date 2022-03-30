@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <!-- This is a basic header that will be pretty consistent across all HTML pages -->
     <meta charset="UTF-8">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <!-- Determines the title that pops up in the tab when the page is opened -->
     <title>Input Page</title>
 </head>
 <body>
    <form method="post">
+      <!-- Creating an invisible box around the text boxes -->
       <div>
-         <label for="title">Course URL</label>
-         <input type="text" name="url"
-               placeholder="URL"></input>
+         <label for="title">Subject Code</label>
+         <!-- Creates a text box with name "subject" -->
+         <input type="text" name="subject"
+               placeholder="CS"></input>
+               <br>
+         <label for="title">Course Number</label>
+         <!-- Creates a text box with name "num" -->
+         <input type="text" name="num"
+               placeholder="196"></input>
       </div>
-
+      
+      <!-- Creating an invisible box around the submit button -->
       <div>
+         <!-- Calls the form method on line 11 and then routes to the Flask app -->
          <button type="submit">Submit</button>
       </div>
    </form>
