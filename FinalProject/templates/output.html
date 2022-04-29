@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+        <title>Output Page Test</title>
+        <style>
+            body{
+                background-color:#0a192f;
+            }
+            h1{
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                color:#7ae6d9;
+                font-weight:bold;
+                font-size:300%;
+                text-align:center;
+            }
+               
+            h2{
+               font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+                color:#ccd6f6;
+                font-size:150%;
+                text-align:center;
+            }
+            .rect{
+                height:50px;
+                width:600px;
+                background:#0a192f;
+                color:#ccd6f6;
+                position:relative;
+                border-style:solid;
+                font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            }
+            div {
+                position:center;
+        </style>    
+    </head>
+<body>
+<h1 align="center"> Voilà!
+    </h1>
+<h2 align="center"> Here's what's available...
+    </h2>
+<div align="center">
+    {% for item in output_list %}
+    <div class="rect">
+        <!-- Runs a for loop that is similar to python - iterates through every element of the output_list -->
+        <h3> {{item}}</h3>
+    </div>
+    <!-- Terminates the for loop -->
+    {% endfor %}
+</div>
+</body>
+</html>
