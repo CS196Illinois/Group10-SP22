@@ -53,6 +53,12 @@
             font-size: 200%;
             text-align: left;
         }
+        label {
+            color: #ccd6f6;
+            font-family: "NTR",sans-serif;
+            font-size: 200%;
+            text-align: left;
+        }
         h6 {
             color: #ccd6f6;
             font-family: "NTR",sans-serif;
@@ -70,29 +76,46 @@
           border-radius: 25px;
           border: 2px solid #ffffff;
           padding: 20px; 
-          width: 1380px;
-          height: 650px;   
+          width: 96%;
+          height: 100%;   
         }
          
        #rcourners2 {
-        border-radius: 25px;
-          border: 1.5px solid #ffffff;
-          padding: 20px; 
-          width: 75px;
-          height: 15px; 
-          margin: auto;
+/*         border-radius: 25px; */
+/*           border: 1.5px solid #ffffff; */
+/*           padding: 20px;  */
+/*           width: 75px;
+          height: 15px;  */
+/*           margin: auto; */
+           text-align: center;
+           margin-top: 7px;
+        }
+        
+        #box {
+            border-radius: 25px;
+            border: 1.5px solid #ffffff;
+            width: 85px;
+            height: 40px;
+            margin-left: 46.8%;
         }
            
-        
+        #box2 {
+            border-radius: 25px;
+            border: 1.5px solid #ffffff;
+            width: 85px;
+            height: 40px;
+            margin-left: 46.8%;
+        }
         #rcourners3 {
-          border-radius: 25px;
+/*           border-radius: 25px;
           border: 1.5px solid #ffffff;
           padding: 20px; 
           width: 75px;
           height: 15px; 
-          margin: auto;
+          margin: auto; */
             
-           
+           text-align: center;
+           margin-top: 7px;
         }
         #sbutton {
          font-family: "NTR",sans-serif;
@@ -101,7 +124,14 @@
        #space {
            
         }
-        /* The container */
+        #boxes {
+            margin-left: 40%;
+        }
+        #study {
+            text-align: center;
+        }
+
+/* Customize the label (the container) */
 .container {
   display: block;
   position: relative;
@@ -113,8 +143,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-margin: auto;
-
 }
 
 /* Hide the browser's default checkbox */
@@ -124,7 +152,6 @@ margin: auto;
   cursor: pointer;
   height: 0;
   width: 0;
-    margin: auto;
 }
 
 /* Create a custom checkbox */
@@ -135,22 +162,16 @@ margin: auto;
   height: 25px;
   width: 25px;
   background-color: #eee;
-margin: auto;
-
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   background-color: #ccc;
-margin: auto;
-
 }
 
 /* When the checkbox is checked, add a blue background */
 .container input:checked ~ .checkmark {
   background-color: #2196F3;
-margin: auto;
-
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -158,15 +179,11 @@ margin: auto;
   content: "";
   position: absolute;
   display: none;
-margin: auto;
-
 }
 
 /* Show the checkmark when checked */
 .container input:checked ~ .checkmark:after {
   display: block;
-margin: auto;
-
 }
 
 /* Style the checkmark/indicator */
@@ -180,93 +197,117 @@ margin: auto;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-margin: auto;
-
 }
         
-        
-        
-        
-        
-        
-        
-        
-        
-    </style>
+</style>
     
 </head>
 <body id="rcourners1">
-    
     <h1 id="center" class="small"> Welcome </h1> <h3 id="center" class="small" >ILLINI!</h3> <h1 id="center" class="small"> When do you want to study? </h1>
-  <div>
-   <form method="post" class="center">
-      <!-- Creating an invisible box around the text boxes -->
-      <div>
-         <h2  id="rcourners2" class="center" >date</h2>
-         <!-- Creates a text box with name "subject" -->
-         <input type="text" name="subject" style="height: 25px; width: 200px"
-               placeholder="e.g. Monday, January 1, 2022"></input>
-               <br>
-         <h2  id="rcourners3" class="center">time</h2>
-         <!-- Creates a text box with name "num" -->
-         <input type="text" name="num" style="height: 25px; width: 200px"
-                placeholder="e.g. 8:00 AM"></input>
-      <div>
-      class="space"
-      <!-- Creating an invisible box around the submit button -->
-      </div>
-         <!-- Calls the form method on line 11 and then routes to the Flask app -->
-         <button type="submit" style="height: 25px; width: 100px" class="sbutton" >Submit</button>
-      </div>
     <div>
-        
-        <h4>Where do you want to study?</h4>
-<h5 class="container">Chemistry Library
-  <input type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</h5>
-<h5 class="container">Funk ACES Library
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h5>
-<h5 class="container">Grainger Engineering Library
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h5>
-<h5 class="container">International and Area Studies
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h5>
-        <h5 class="container">Main Library
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h5>
-</div>
-
-<div> 
-        
-        
-        <h6 class="container">Media Commons Pro Gear Rental
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h6>
-        <h6 class="container">Music & Performing Arts Library
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h6>
-        <h6 class="container">Social Science Health and Education Library
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h6>
-        <h6 class="container">Undergraduate Library
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</h6>
-        
-        
-        
+        <form method="post" class="center">
+            <!-- Creating an invisible box around the text boxes -->
+            <div>
+                <br>
+                <div id="box">
+                    <h2  id="rcourners2" class="center" >date</h2>
+                </div>
+                <br>
+                <!-- Creates a text box with name "subject" -->
+                <input type="text" name="subject" style="height: 25px; width: 200px" placeholder="e.g. Monday, January 1, 2022">
+                <br><br>
+                <div id="box2">
+                    <h2  id="rcourners3" class="center">time</h2>
+                </div>
+                <br>
+                <!-- Creates a text box with name "num" -->
+                <input type="text" name="num" style="height: 25px; width: 200px"
+                placeholder="e.g. 8:00 AM">
+                <br>
+                <br>
+            </div>
+              <!-- Creating an invisible box around the submit button -->
+            <div>
+         <!-- Calls the form method on line 11 and then routes to the Flask app -->
+                <button type="submit" style="height: 25px; width: 100px" class="sbutton" >Submit</button>
+            </div>
+            <h4 id="study">Where do you want to study?</h4>
+            <div id="boxes">
+<!--                  <h5 class="container">Chemistry Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </h5>
+                 <h5 class="container">Funk ACES Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </h5>
+                 <h5 class="container">Grainger Engineering Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </h5>
+                 <h5 class="container">International and Area Studies
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </h5>
+                 <h5 class="container">Main Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                </h5>
+                <h5 class="container">Media Commons Pro Gear Rental
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </h5>
+                <h5 class="container">Music & Performing Arts Library
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </h5>
+                <h5 class="container">Social Science Health and Education Library
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </h5>
+                <h5 class="container">Undergraduate Library
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </h5>  -->
+                 <label class="container">Chemistry Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </label>
+                 <label class="container">Funk ACES Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </label>
+                 <label class="container">Grainger Engineering Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </label>
+                 <label class="container">International and Area Studies
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                 </label>
+                 <label class="container">Main Library
+                     <input type="checkbox">
+                     <span class="checkmark"></span>
+                </label>
+                <label class="container">Media Commons Pro Gear Rental
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </label>
+                <label class="container">Music & Performing Arts Library
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </label>
+                <label class="container">Social Science Health and Education Library
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </label>
+                <label class="container">Undergraduate Library
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                </label>
+            </div>
+       </form>
     </div>
-   </form>
 </body>
 </html>
 
